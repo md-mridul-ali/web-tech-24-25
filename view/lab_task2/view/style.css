@@ -1,9 +1,15 @@
  body{
     background-color: rgb(219, 236, 254);
 }
-/* .bank-title{
-    position: absolute;
-    left: 50px;
-    top: 50px;
-    transform: translate(-50%, -50%);
-}  */
+
+.table{
+    background-color: white;
+}
+.table tr td{
+ 
+}
+.div{
+    height: 150px;
+    width: 400px;
+    overflow-y: scroll;
+}
