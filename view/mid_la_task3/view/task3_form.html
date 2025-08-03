@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/task3_style.css">
+    <script src="../js/task3_valid.js"></script>
+</head>
+<body>
+    <div class="form-container">
+    <form>
+      <h2 class="section-title">Donor Information</h2>
+      
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="City" required>
+
+      <select>
+        <option value="">Select a State</option>
+        <option value="Dhaka">Dhaka</option>
+        <option value="Chittagong">Chittagong</option>
+        <!-- More options -->
+      </select>
+
+      <input type="tel" placeholder="Phone">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Create Password (min 8 characters)" minlength="8">
+      <input type="password" placeholder="Confirm Password">
+
+      <label>Donation Amount</label>
+      <div class="donation-options">
+        <label><input type="radio" name="amount" checked> None</label>
+        <label><input type="radio" name="amount"> 500 BDT</label>
+        <label><input type="radio" name="amount"> 1000 BDT</label>
+        <label><input type="radio" name="amount"> 2000 BDT</label>
+        <label><input type="radio" name="amount"> 3000 BDT</label>
+        <label><input type="radio" name="amount"> Other</label>
+      </div>
+      <input type="text" placeholder="Other Amount">
+
+      <label><input type="checkbox"> I am interested in giving on a regular basis.</label>
+
+      <h3 class="section-subtitle">Additional Information</h3>
+
+      <label><input type="checkbox"> I would like my gift to remain anonymous.</label>
+      <label><input type="checkbox"> My employer offers a matching gift program.</label>
+      <label><input type="checkbox"> Please don’t send a thank you letter.</label>
+
+      <textarea placeholder="Comments"></textarea>
+
+      <div class="form-buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
