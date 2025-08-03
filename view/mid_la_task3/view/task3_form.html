@@ -9,28 +9,37 @@
 </head>
 <body>
     <div class="form-container">
-    <form>
+    <form onsubmit="handleSubmit()">
       <h2 class="section-title">Donor Information</h2>
-      
-      <input type="text" placeholder="First Name" required>
-      <input type="text" placeholder="Last Name" required>
-      <input type="text" placeholder="Address" required>
-      <input type="text" placeholder="City" required>
 
-      <select>
+      <label for="firstname">First Name</label>
+      <input id="fname" type="text">
+
+      <label for="lastname">Last Name</label>
+      <input id="lname" type="text">
+
+      <label for="address">Address</label>
+      <input id="address" type="text">
+
+      <label for="city">City</label>
+      <input id="city" type="text">
+
+      <label for="state">State</label>
+      <select id="select">
         <option value="">Select a State</option>
         <option value="Dhaka">Dhaka</option>
         <option value="Chittagong">Chittagong</option>
-        <!-- More options -->
       </select>
-
-      <input type="tel" placeholder="Phone">
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Create Password (min 8 characters)" minlength="8">
-      <input type="password" placeholder="Confirm Password">
-
+      <label for="mobile">Phone</label>
+      <input id="phn" type="text">
+      <label for="email">Email</label>
+      <input id="email" type="email">
+      <label for="create">Create Password(min 8 character)</label>
+      <input id="crepass" type="password">
+      <label for="create">Confirm Password</label>
+      <input id="conpass" type="password">
       <label>Donation Amount</label>
-      <div class="donation-options">
+      <div class="donation-options" id="dname">
         <label><input type="radio" name="amount" checked> None</label>
         <label><input type="radio" name="amount"> 500 BDT</label>
         <label><input type="radio" name="amount"> 1000 BDT</label>
@@ -38,19 +47,21 @@
         <label><input type="radio" name="amount"> 3000 BDT</label>
         <label><input type="radio" name="amount"> Other</label>
       </div>
-      <input type="text" placeholder="Other Amount">
+      <label for="otheramount">Other Amount</label>
+      <input id="amount" type="text">
 
-      <label><input type="checkbox"> I am interested in giving on a regular basis.</label>
+      <label><input id="checkbox1" type="checkbox"> I am interested in giving on a regular basis.</label>
 
       <h3 class="section-subtitle">Additional Information</h3>
 
-      <label><input type="checkbox"> I would like my gift to remain anonymous.</label>
-      <label><input type="checkbox"> My employer offers a matching gift program.</label>
-      <label><input type="checkbox"> Please don’t send a thank you letter.</label>
+      <label><input id="checkbox2" type="checkbox"> I would like my gift to remain anonymous.</label>
+      <label><input id="checkbox3" type="checkbox"> My employer offers a matching gift program.</label>
+      <label><input id="checkbox4" type="checkbox"> Please don’t send a thank you letter.</label>
+      
+      <label for="comment">Comment</label>
+      <textarea id="textarea"></textarea>
 
-      <textarea placeholder="Comments"></textarea>
-
-      <div class="form-buttons">
+      <div class="form-buttons" id="button">
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
       </div>
